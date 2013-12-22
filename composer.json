@@ -1,0 +1,25 @@
+{
+    "name": "davibennun/laravel-raygun",
+    "description": "Laravel wrapper for raygun",
+    "keywords": ["raygun", "laravel"],
+    "authors": [
+        {
+            "name": "DaviBenNun",
+            "email": "davi@andradenunes.org"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.*",
+        "mindscape/raygun4php": "1.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Davibennun\\LaravelRaygun\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
