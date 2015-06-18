@@ -28,9 +28,8 @@ class LaravelRaygunServiceProvider extends ServiceProvider {
      */
     public function register()
     {
-
-        $this->app->singleton('RayGun', function($app){
-            return new RaygunClient(Config::get('laravel-raygun::apiKey'), Config::get('laravel-raygun::async'), Config::get('laravel-raygun::debugMode'));
+        $this->app->singleton('raygun', function($app){
+            return new RaygunClient(Config::get('laravel-raygun.apiKey'), Config::get('laravel-raygun.async'), Config::get('laravel-raygun.debugMode'));
         });
 
     }
