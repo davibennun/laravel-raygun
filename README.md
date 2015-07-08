@@ -1,8 +1,13 @@
 # Installation
 
 Update your `composer.json` file to include this package as a dependency
+Laravel 4
 ```json
 "davibennun/laravel-raygun": "dev-master"
+```
+Laravel 5
+```json
+"davibennun/laravel-raygun": "dev-laravel5"
 ```
 
 Register the Raygun service provider by adding it to the providers array.
