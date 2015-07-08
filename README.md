@@ -1,6 +1,7 @@
 # Installation
 
 Update your `composer.json` file to include this package as a dependency
+
 Laravel 4
 ```json
 "davibennun/laravel-raygun": "dev-master"
