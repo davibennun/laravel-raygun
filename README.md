@@ -1,16 +1,21 @@
 # Installation
 
 Update your `composer.json` file to include this package as a dependency
+Laravel 4
 ```json
 "davibennun/laravel-raygun": "dev-master"
 ```
+Laravel 5
+```json
+"davibennun/laravel-raygun": "dev-laravel5"
+```
 
-Register the Raygun service provider by adding it to the providers array in the `app/config/app.php` file.
+Register the Raygun service provider by adding it to the providers array.
 ```
 Davibennun\LaravelRaygun\LaravelRaygunServiceProvider
 ```
 
-Alias the Raygun facade by adding it to the aliases array in the `app/config/app.php` file.
+Alias the Raygun facade by adding it to the aliases array.
 ```php
 'aliases' => array(
 	'Raygun' => 'Davibennun\LaravelRaygun\Facades\Raygun'
@@ -20,10 +25,16 @@ Alias the Raygun facade by adding it to the aliases array in the `app/config/app
 # Configuration
 
 Copy the config file into your project by running
+
+Laravel 4
 ```
 php artisan config:publish davibennun/laravel-raygun
 ```
 
+Laravel 5
+```
+php artisan vendor:publish --provider="Davibennun\LaravelRaygun\LaravelRaygunServiceProvider" --tag="config"
+```
 Edit the config file to include your app ID and secret key.
 
 # Usage
