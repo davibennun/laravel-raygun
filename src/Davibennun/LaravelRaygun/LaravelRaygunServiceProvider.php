@@ -19,7 +19,7 @@ class LaravelRaygunServiceProvider extends ServiceProvider {
     public function boot(){
         $this->publishes([
             __DIR__.'/../../config/config.php' => config_path('laravel-raygun.php'),
-        ]);
+        ], 'config');
     }
     /**
      * Register the service provider.
